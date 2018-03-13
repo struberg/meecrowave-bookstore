@@ -12,42 +12,14 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
-        <meecrowave.version>1.2.1</meecrowave.version>
+        <meecrowave.version>1.2.2-SNAPSHOT</meecrowave.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <!-- atinject JSR-330 API fuer @Inject, Qualiefier, etc-->
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-atinject_1.0_spec</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <!-- Die CDI Spezifikation API -->
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jcdi_2.0_spec</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <!-- Die JAX-RS Spezifikation API -->
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jaxrs_2.0_spec</artifactId>
-            <version>1.0-alpha-1</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <!--
-                Benoetigen wir nicht zwingend.
-                Habe ich nur hinzugefuegt um JSONP herzeigen zu koennen.
-            -->
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-json_1.1_spec</artifactId>
-            <version>1.0</version>
-            <scope>provided</scope>
+            <groupId>org.apache.meecrowave</groupId>
+            <artifactId>meecrowave-specs-api</artifactId>
+            <version>${meecrowave.version}</version>
         </dependency>
 
         <dependency>
