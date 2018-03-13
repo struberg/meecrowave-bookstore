@@ -1,0 +1,4 @@
+<beans>
+    <!-- Neu in CDI-2.0: nur mehr Klassen mit Scope als CDI bean aufgabeln -->
+    <trim/>
+</beans>
