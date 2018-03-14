@@ -30,6 +30,15 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <!-- only needed if you want to use some ASF SNAPSHOT dependency -->
+        <repository>
+            <id>apache.snapshots</id>
+            <url>https://repository.apache.org/content/groups/snapshots/</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
     <build>
         <finalName>bookstore</finalName>
         <plugins>
