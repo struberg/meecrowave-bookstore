@@ -5,7 +5,6 @@
     <groupId>net.struberg.microprofile.bookstore</groupId>
     <artifactId>mp-bookstore</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,6 +14,16 @@
         <meecrowave.version>1.2.2-SNAPSHOT</meecrowave.version>
     </properties>
 
+    <description>
+      Using the meecrowave-maven-plugin we can run the server from the commandline with the following command
+        $> mvn clean install meecrowave:run
+
+      For debugging we can use:
+        $> mvnDebug meecrowave:run
+
+      If you want to bundle the project together into a deployable bundle just use
+        $> mvn meecrowave:bundle
+    </description>
     <dependencies>
         <dependency>
             <groupId>org.apache.meecrowave</groupId>
@@ -43,13 +52,6 @@
         <finalName>bookstore</finalName>
         <plugins>
             <plugin>
-                <!--
-                  Dieses Plugin erlaubt es uns die Applikation einfach mittels der folgenden cmd line zu Starten:
-                  $> mvn clean install meecrowave:run
-
-                  Zum Debuggen verwenden wir:
-                  $> mvnDebug meecrowave:run
-                -->
                 <groupId>org.apache.meecrowave</groupId>
                 <artifactId>meecrowave-maven-plugin</artifactId>
                 <version>${meecrowave.version}</version>
