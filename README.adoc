@@ -1,0 +1,34 @@
+# Example Bookstore or Apache Meecrowave
+
+This project contains a small example to highlight some basic Apache Meecrowave features.
+
+## What is Apache Meecrowave?
+
+Apache Meecrowave is a small server based on JavaEE8 technologies:
+
+* CDI-2.0 (Apache OpenWebBeans-2.0.x)
+* Servlet-4.0 (Apache Tomcat-9.0.x)
+* JSON_P-1.1 and JSON_B-1.0 (Apache Johnzon
+* JAX-RS-2.1 (Apache CXF-3.2.x)
+* log4j 2.x
+
+## Running the sample
+
+Using the meecrowave-maven-plugin we can run the server from the commandline with the following command
+
+```
+$> mvn clean install meecrowave:run
+```
+
+For debugging we can use:
+```
+$> mvnDebug meecrowave:run
+```
+
+If you want to bundle the project together into a deployable bundle just use
+```
+$> mvn meecrowave:bundle
+```
+You will end up with a zip file in ./target/.
+This zip will contain all the libraries of the whole container plus your own code parts and resources.
+
