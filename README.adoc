@@ -1,4 +1,4 @@
-# Example Bookstore or Apache Meecrowave
+# Example Bookstore for Apache Meecrowave
 
 This project contains a small example to highlight some basic Apache Meecrowave features.
 
