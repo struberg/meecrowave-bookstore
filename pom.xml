@@ -48,6 +48,17 @@
             <snapshots><enabled>true</enabled></snapshots>
         </repository>
     </repositories>
+    
+    <pluginRepositories>
+        <!-- only needed if you want to use some ASF SNAPSHOT dependency -->
+        <pluginRepository>
+            <id>apache.snapshots</id>
+            <url>https://repository.apache.org/content/groups/snapshots/</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    
     <build>
         <finalName>bookstore</finalName>
         <plugins>
